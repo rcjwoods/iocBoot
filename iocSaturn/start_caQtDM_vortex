@@ -1,0 +1,11 @@
+#!/bin/bash
+# Tell medm where to look for .adl files.  Edit the following line, or comment it
+# out if the environment variable is already set
+source /local/DPbin/Scripts/Paths.bash
+source /local/DPbin/Scripts/caQtDM_setup.bash
+
+export EPICS_CA_MAX_ARRAY_BYTES=500000
+
+caQtDM -macro "P="$1":, D=dxp1:, M=mca1"  dxpSaturn.ui &
+
+

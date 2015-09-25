@@ -1,0 +1,10 @@
+#!/bin/bash
+# Tell medm where to look for .adl files.  Edit the following line, or comment it
+# out if the environment variable is already set
+source /local/DPbin/Scripts/Paths.bash
+export EPICS_DISPLAY_PATH=$EPICS_SUPPORT/adls/
+
+export EPICS_CA_MAX_ARRAY_BYTES=500000
+
+medm -x -macro "P="$1":, D=dxp1:, M=mca1"  dxpSaturn.adl &
+

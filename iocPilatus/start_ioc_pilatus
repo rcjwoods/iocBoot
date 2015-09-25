@@ -1,0 +1,10 @@
+#!/bin/bash
+
+export EPICS_CA_MAX_ARRAY_BYTES=300000000
+
+cd /local/DPbin/epics/iocBoot/iocPilatus/
+
+source /local/DPbin/Scripts/Paths.bash
+
+${ADPILATUS}/iocs/pilatusIOC/bin/linux-x86_64/pilatusDetectorApp st.cmd
+

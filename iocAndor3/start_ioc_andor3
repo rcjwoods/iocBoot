@@ -1,0 +1,13 @@
+#!/bin/bash
+export BITFLOW_INSTALL_DIRS=/opt/andor/bitflow
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/opt/andor/bitflow/64b/lib
+
+/local/DPbin/dp-eth-config/chmod_andorVideo
+
+export EPICS_CA_MAX_ARRAY_BYTES=300000000
+
+cd /local/DPbin/epics/iocBoot/iocAndor3/
+
+source /local/DPbin/Scripts/Paths.bash
+echo ${ADANDOR3}
+${ADANDOR3}/iocs/andor3IOC/bin/linux-x86_64/andor3App st.cmd.linux

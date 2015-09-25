@@ -1,0 +1,15 @@
+#!/bin/bash
+
+#Setup Ethernet card
+/local/DPbin/dp-eth-config/dp-eth.config pixirad
+
+sleep 1
+
+export EPICS_CA_MAX_ARRAY_BYTES=300000000
+
+cd /local/DPbin/epics/iocBoot/iocPixirad/
+
+source /local/DPbin/Scripts/Paths.bash
+
+${ADPIXIRAD}/iocs/pixiradIOC/bin/${EPICS_HOST_ARCH}/pixiradApp st.cmd
+

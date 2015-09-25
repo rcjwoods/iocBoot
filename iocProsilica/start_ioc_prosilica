@@ -1,0 +1,59 @@
+#!/bin/bash
+
+#Setup Ethernet card
+/local/DPbin/dp-eth-config/dp-eth.config prosilica
+
+sleep 1
+
+export EPICS_CA_MAX_ARRAY_BYTES=30000000
+
+cd /local/DPbin/epics/iocBoot/iocProsilica/
+
+source /local/DPbin/Scripts/Paths.bash
+
+if [ $1 = "GC1380H" ]
+then
+	if [ $2 -eq 8 ]
+	then
+		${ADPROSILICA}/iocs/prosilicaIOC/bin/${EPICS_HOST_ARCH}/prosilicaApp st.GC1380H-8bit.cmd  
+		
+	elif [ $2 -eq 16 ]
+	then
+		${ADPROSILICA}/iocs/prosilicaIOC/bin/${EPICS_HOST_ARCH}/prosilicaApp st.GC1380H-16bit.cmd
+		
+	else
+		echo "Unknown bit depth"
+	fi
+elif [ $1 = "GC2450" ]
+then
+	if [ $2 -eq 8 ]
+	then
+		${ADPROSILICA}/iocs/prosilicaIOC/bin/${EPICS_HOST_ARCH}/prosilicaApp st.GC2450-8bit.cmd
+		
+	elif [ $2 -eq 16 ]
+	then
+		${ADPROSILICA}/iocs/prosilicaIOC/bin/${EPICS_HOST_ARCH}/prosilicaApp st.GC2450-16bit.cmd
+	
+	else
+		echo "Unknown bit depth"
+	
+	fi
+	
+elif [ $1 = "XrayEye" ]
+then
+	if [ $2 -eq 8 ]
+	then
+		${ADPROSILICA}/iocs/prosilicaIOC/bin/${EPICS_HOST_ARCH}/prosilicaApp st.XrayEye-8bit.cmd
+		
+	elif [ $2 -eq 16 ]
+	then
+		${ADPROSILICA}/iocs/prosilicaIOC/bin/${EPICS_HOST_ARCH}/prosilicaApp st.XrayEye-16bit.cmd
+	
+	else
+		echo "Unknown bit depth"
+	
+	fi
+	
+else
+	echo "Unknown camera"
+fi

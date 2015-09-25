@@ -1,0 +1,9 @@
+#!/bin/bash
+export EPICS_CA_MAX_ARRAY_BYTES=30000000
+
+cd /local/DPbin/epics/iocBoot/iocxspress3-4Channel
+source /local/DPbin/Scripts/Paths.bash
+
+${XSPRESS3}/iocs/xspress3IOC/bin/linux-x86_64/xspress3App st.cmd
+
+

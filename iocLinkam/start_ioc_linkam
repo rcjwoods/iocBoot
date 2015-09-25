@@ -1,0 +1,11 @@
+#!/bin/bash
+# Tell medm where to look for .adl files.  Edit the following line, or comment it
+# out if the environment variable is already set
+
+export EPICS_CA_MAX_ARRAY_BYTES=3000000
+source /local/DPbin/Scripts/Paths.bash
+
+cd /local/DPbin/epics/iocBoot/iocLinkam/
+
+#start Linkam IOC
+${EPICS_SUPPORT}/../../Linkam/EPlinkam1/bin/${EPICS_HOST_ARCH}/EPLinkam1 st.cmd

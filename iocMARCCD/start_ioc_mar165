@@ -1,0 +1,11 @@
+#!/bin/bash
+
+export EPICS_CA_MAX_ARRAY_BYTES=30000000
+
+cd /local/DPbin/epics/iocBoot/iocMARCCD/
+
+source /local/DPbin/Scripts/Paths.bash
+
+${ADMARCCD}/iocs/marCCDIOC/bin/linux-x86/marCCDApp st.cmd
+
+

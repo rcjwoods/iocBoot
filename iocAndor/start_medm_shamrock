@@ -1,0 +1,10 @@
+#!/bin/bash
+
+echo "Starting Shamrock MEDM..."
+
+export EPICS_CA_MAX_ARRAY_BYTES=30000000
+source /local/DPbin/Scripts/Paths.bash
+export EPICS_DISPLAY_PATH=$EPICS_SUPPORT/adls/
+
+medm -x -macro "P="$1":, R=cam1:" Shamrock.adl &
+

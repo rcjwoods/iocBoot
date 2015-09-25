@@ -1,0 +1,20 @@
+
+### user calcs.  Disabled on startup unless the xxxEnable PV is
+### autosaved.
+file userCalcs10_settings.req P=$(P)
+file userCalcN_settings.req P=$(P),N=I_Detector
+$(P)userCalcEnable
+
+file userTransforms10_settings.req P=$(P)
+$(P)userTranEnable
+
+file userStringCalcs10_settings.req P=$(P)
+$(P)userStringCalcEnable
+
+file userArrayCalcs10_settings.req P=$(P)
+$(P)userArrayCalcEnable
+
+file userStringSeqs10_settings.req P=$(P)
+$(P)userStringSeqEnable
+
+

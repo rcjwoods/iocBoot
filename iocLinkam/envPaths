@@ -1,0 +1,7 @@
+</local/config/envPaths.linux
+<$(DPEPICS)/DPenvPaths.linux
+
+epicsEnvSet("TOP","$(DPEPICS)/Linkam/EPlinkam1")
+epicsEnvSet("IOCBOOT", "/local/DPbin/epics/iocBoot/iocLinkam/")
+epicsEnvSet("IOC","iocEPlinkam1")
+

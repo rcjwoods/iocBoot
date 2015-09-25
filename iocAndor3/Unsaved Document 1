@@ -1,0 +1,8 @@
+#!/bin/bash
+
+
+export EPICS_CA_MAX_ARRAY_BYTES=300000000
+
+cd /local/DPbin/epics/epics_2014-5-14/synApps_5_7/support/areaDetector-2-0-1/ADAndor3/iocs/andor3IOC/iocBoot/iocAndor3-DP/
+
+../../bin/linux-x86_64/andor3App st.cmd.linux

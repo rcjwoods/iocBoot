@@ -1,0 +1,8 @@
+</local/config/envPaths.linux
+<$(DPEPICS)/DPenvPaths.linux
+<$(AREA_DETECTOR)/ADenvPaths.linux
+
+epicsEnvSet("TOP","$(ADPIXIRAD)/iocs/pixiradIOC")
+epicsEnvSet("IOCBOOT", "/local/DPbin/epics/iocBoot/iocPixirad/")
+
+

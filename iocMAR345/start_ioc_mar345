@@ -1,0 +1,11 @@
+#!/bin/bash
+export EPICS_CA_MAX_ARRAY_BYTES=30000000
+
+/local/DPbin/dp-eth-config/dp-eth.config mar345
+
+cd /local/DPbin/epics/iocBoot/iocMAR345/
+
+source /local/DPbin/Scripts/Paths.bash
+
+${ADMAR345}/iocs/mar345IOC/bin/${EPICS_HOST_ARCH}/mar345App st.cmd
+

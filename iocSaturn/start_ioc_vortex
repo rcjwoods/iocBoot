@@ -1,0 +1,16 @@
+#!/bin/bash
+export EPICS_CA_MAX_ARRAY_BYTES=500000
+
+cd /local/DPbin/epics/iocBoot/iocSaturn/
+
+source /local/DPbin/Scripts/Paths.bash
+
+if [ $1 -eq 20 ]	# 20MHz Saturn box
+then
+	${DXP}/bin/linux-x86/startWithIopl3 ${DXP}/bin/linux-x86/dxpApp st-20MHz.cmd
+
+elif [ $1 -eq 40 ]	# 40MHz Saturn box
+then
+	${DXP}/bin/linux-x86/startWithIopl3 ${DXP}/bin/linux-x86/dxpApp st-40MHz.cmd
+	
+fi

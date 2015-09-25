@@ -1,0 +1,11 @@
+#!/bin/bash
+# Tell medm where to look for .adl files.  Edit the following line, or comment it
+# out if the environment variable is already set
+
+source /local/DPbin/Scripts/Paths.bash
+export EPICS_DISPLAY_PATH=${EPICS_SUPPORT}/../../Linkam/EPlinkam1/EPLinkam1App/op/adl/:${EPICS_SUPPORT}/adls
+
+export EPICS_CA_MAX_ARRAY_BYTES=3000000
+
+#start Linkam MEDM
+medm -x -attach -macro "P="$1":, R=asyn_1" ci94_new.adl &

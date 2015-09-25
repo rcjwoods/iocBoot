@@ -1,0 +1,6 @@
+</local/config/envPaths.linux
+<$(DPEPICS)/DPenvPaths.linux
+<$(AREA_DETECTOR)/ADenvPaths.linux
+
+epicsEnvSet("TOP","$(ADMYTHEN)/iocs/mythenIOC")
+epicsEnvSet("IOCBOOT", "/local/DPbin/epics/iocBoot/iocMythen/")

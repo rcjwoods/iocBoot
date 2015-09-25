@@ -1,0 +1,192 @@
+file configMenu_settings.req P=dp_xsp3_xrdlab:,CONFIG=setup
+file NDProcess_settings.req P=dp_xsp3_xrdlab:,R=Proc1:,  PORT=PROC1,ADDR=0,TIMEOUT=1,NDARRAY_PORT=XSP3
+file NDFileHDF5_settings.req P=dp_xsp3_xrdlab:,R=HDF1:,PORT=FileHDF1,ADDR=0,TIMEOUT=1,NDARRAY_PORT=XSP3
+file xspress3_settings.req P=dp_xsp3_xrdlab:,R=det1:,PORT=XSP3, ADDR=0, TIMEOUT=5, MAX_SPECTRA=4096, MAX_FRAMES=16384, HDF=dp_xsp3_xrdlab:HDF1:, PROC=dp_xsp3_xrdlab:Proc1:
+file NDAttribute_settings.req P=dp_xsp3_xrdlab:,R=C1SCAs:,    PORT=XSP3.C1SCAs,ADDR=0,TIMEOUT=1,NCHANS=16384,NDARRAY_PORT=XSP3
+file NDAttributeN_settings.req P=dp_xsp3_xrdlab:,R=C1SCAs:1:,  PORT=XSP3.C1SCAs,ADDR=0,TIMEOUT=1,NCHANS=16384
+file NDAttributeN_settings.req P=dp_xsp3_xrdlab:,R=C1SCAs:2:,  PORT=XSP3.C1SCAs,ADDR=1,TIMEOUT=1,NCHANS=16384
+file NDAttributeN_settings.req P=dp_xsp3_xrdlab:,R=C1SCAs:3:,  PORT=XSP3.C1SCAs,ADDR=2,TIMEOUT=1,NCHANS=16384
+file NDAttributeN_settings.req P=dp_xsp3_xrdlab:,R=C1SCAs:4:,  PORT=XSP3.C1SCAs,ADDR=3,TIMEOUT=1,NCHANS=16384
+file NDAttributeN_settings.req P=dp_xsp3_xrdlab:,R=C1SCAs:5:,  PORT=XSP3.C1SCAs,ADDR=4,TIMEOUT=1,NCHANS=16384
+file NDAttributeN_settings.req P=dp_xsp3_xrdlab:,R=C1SCAs:6:,  PORT=XSP3.C1SCAs,ADDR=5,TIMEOUT=1,NCHANS=16384
+file NDAttributeN_settings.req P=dp_xsp3_xrdlab:,R=C1SCAs:7:,  PORT=XSP3.C1SCAs,ADDR=6,TIMEOUT=1,NCHANS=16384
+file NDAttributeN_settings.req P=dp_xsp3_xrdlab:,R=C1SCAs:8:,  PORT=XSP3.C1SCAs,ADDR=7,TIMEOUT=1,NCHANS=16384
+file NDROI_settings.req P=dp_xsp3_xrdlab:,R=ROI1:, PORT=XSP3.CHAN1, TIMEOUT=1, ADDR=0, NDARRAY_PORT=PROC1, NDARRAY_ADDR=0, Enabled=0
+file NDStdArrays_settings.req P=dp_xsp3_xrdlab:,R=ARR1:,PORT=XSP3.ARR1,ADDR=0,TIMEOUT=1,NDARRAY_PORT=XSP3.CHAN1,TYPE=Float64,FTVL=DOUBLE,NELEMENTS=4096
+file NDROIStat_settings.req P=dp_xsp3_xrdlab:,R=ROIStat1:  ,PORT=ROISTAT1,ADDR=0,TIMEOUT=1,NDARRAY_PORT=XSP3,NCHANS=16384
+file NDROIStatN_settings.req P=dp_xsp3_xrdlab:,R=ROIStat1:1:,PORT=ROISTAT1,ADDR=0,TIMEOUT=1,NCHANS=16384
+file NDROIStatN_settings.req P=dp_xsp3_xrdlab:,R=ROIStat1:2:,PORT=ROISTAT1,ADDR=1,TIMEOUT=1,NCHANS=16384
+file NDROIStatN_settings.req P=dp_xsp3_xrdlab:,R=ROIStat1:3:,PORT=ROISTAT1,ADDR=2,TIMEOUT=1,NCHANS=16384
+file NDROIStatN_settings.req P=dp_xsp3_xrdlab:,R=ROIStat1:4:,PORT=ROISTAT1,ADDR=3,TIMEOUT=1,NCHANS=16384
+file NDROIStatN_settings.req P=dp_xsp3_xrdlab:,R=ROIStat1:5:,PORT=ROISTAT1,ADDR=4,TIMEOUT=1,NCHANS=16384
+file NDROIStatN_settings.req P=dp_xsp3_xrdlab:,R=ROIStat1:6:,PORT=ROISTAT1,ADDR=5,TIMEOUT=1,NCHANS=16384
+file NDROIStatN_settings.req P=dp_xsp3_xrdlab:,R=ROIStat1:7:,PORT=ROISTAT1,ADDR=6,TIMEOUT=1,NCHANS=16384
+file NDROIStatN_settings.req P=dp_xsp3_xrdlab:,R=ROIStat1:8:,PORT=ROISTAT1,ADDR=7,TIMEOUT=1,NCHANS=16384
+file NDROIStatN_settings.req P=dp_xsp3_xrdlab:,R=ROIStat1:9:,PORT=ROISTAT1,ADDR=8,TIMEOUT=1,NCHANS=16384
+file NDROIStatN_settings.req P=dp_xsp3_xrdlab:,R=ROIStat1:10:,PORT=ROISTAT1,ADDR=9,TIMEOUT=1,NCHANS=16384
+file NDROIStatN_settings.req P=dp_xsp3_xrdlab:,R=ROIStat1:11:,PORT=ROISTAT1,ADDR=10,TIMEOUT=1,NCHANS=16384
+file NDROIStatN_settings.req P=dp_xsp3_xrdlab:,R=ROIStat1:12:,PORT=ROISTAT1,ADDR=11,TIMEOUT=1,NCHANS=16384
+file NDROIStatN_settings.req P=dp_xsp3_xrdlab:,R=ROIStat1:13:,PORT=ROISTAT1,ADDR=12,TIMEOUT=1,NCHANS=16384
+file NDROIStatN_settings.req P=dp_xsp3_xrdlab:,R=ROIStat1:14:,PORT=ROISTAT1,ADDR=13,TIMEOUT=1,NCHANS=16384
+file NDROIStatN_settings.req P=dp_xsp3_xrdlab:,R=ROIStat1:15:,PORT=ROISTAT1,ADDR=14,TIMEOUT=1,NCHANS=16384
+file NDROIStatN_settings.req P=dp_xsp3_xrdlab:,R=ROIStat1:16:,PORT=ROISTAT1,ADDR=15,TIMEOUT=1,NCHANS=16384
+file NDROIStatN_settings.req P=dp_xsp3_xrdlab:,R=ROIStat1:17:,PORT=ROISTAT1,ADDR=16,TIMEOUT=1,NCHANS=16384
+file NDROIStatN_settings.req P=dp_xsp3_xrdlab:,R=ROIStat1:18:,PORT=ROISTAT1,ADDR=17,TIMEOUT=1,NCHANS=16384
+file NDROIStatN_settings.req P=dp_xsp3_xrdlab:,R=ROIStat1:19:,PORT=ROISTAT1,ADDR=18,TIMEOUT=1,NCHANS=16384
+file NDROIStatN_settings.req P=dp_xsp3_xrdlab:,R=ROIStat1:20:,PORT=ROISTAT1,ADDR=19,TIMEOUT=1,NCHANS=16384
+file NDROIStatN_settings.req P=dp_xsp3_xrdlab:,R=ROIStat1:21:,PORT=ROISTAT1,ADDR=20,TIMEOUT=1,NCHANS=16384
+file NDROIStatN_settings.req P=dp_xsp3_xrdlab:,R=ROIStat1:22:,PORT=ROISTAT1,ADDR=21,TIMEOUT=1,NCHANS=16384
+file NDROIStatN_settings.req P=dp_xsp3_xrdlab:,R=ROIStat1:23:,PORT=ROISTAT1,ADDR=22,TIMEOUT=1,NCHANS=16384
+file NDROIStatN_settings.req P=dp_xsp3_xrdlab:,R=ROIStat1:24:,PORT=ROISTAT1,ADDR=23,TIMEOUT=1,NCHANS=16384
+file NDROIStatN_settings.req P=dp_xsp3_xrdlab:,R=ROIStat1:25:,PORT=ROISTAT1,ADDR=24,TIMEOUT=1,NCHANS=16384
+file NDROIStatN_settings.req P=dp_xsp3_xrdlab:,R=ROIStat1:26:,PORT=ROISTAT1,ADDR=25,TIMEOUT=1,NCHANS=16384
+file NDROIStatN_settings.req P=dp_xsp3_xrdlab:,R=ROIStat1:27:,PORT=ROISTAT1,ADDR=26,TIMEOUT=1,NCHANS=16384
+file NDROIStatN_settings.req P=dp_xsp3_xrdlab:,R=ROIStat1:28:,PORT=ROISTAT1,ADDR=27,TIMEOUT=1,NCHANS=16384
+file NDROIStatN_settings.req P=dp_xsp3_xrdlab:,R=ROIStat1:29:,PORT=ROISTAT1,ADDR=28,TIMEOUT=1,NCHANS=16384
+file NDROIStatN_settings.req P=dp_xsp3_xrdlab:,R=ROIStat1:30:,PORT=ROISTAT1,ADDR=29,TIMEOUT=1,NCHANS=16384
+file NDROIStatN_settings.req P=dp_xsp3_xrdlab:,R=ROIStat1:31:,PORT=ROISTAT1,ADDR=30,TIMEOUT=1,NCHANS=16384
+file NDROIStatN_settings.req P=dp_xsp3_xrdlab:,R=ROIStat1:32:,PORT=ROISTAT1,ADDR=31,TIMEOUT=1,NCHANS=16384
+file xspress3ChannelSCAThreshold_settings.req P=dp_xsp3_xrdlab:,R=C1SCAs:5:,PORT=XSP3,ADDR=0,TIMEOUT=1,CHAN=1, SCA=4
+file xspress3ChannelSCALimits_settings.req P=dp_xsp3_xrdlab:,R=C1SCAs:6:,PORT=XSP3, ADDR=0, TIMEOUT=1, CHAN=1, SCA=5
+file xspress3ChannelSCALimits_settings.req P=dp_xsp3_xrdlab:,R=C1SCAs:7:,PORT=XSP3, ADDR=0, TIMEOUT=1, CHAN=1, SCA=6
+file NDAttribute_settings.req P=dp_xsp3_xrdlab:,R=C2SCAs:,    PORT=XSP3.C2SCAs,ADDR=0,TIMEOUT=1,NCHANS=16384,NDARRAY_PORT=XSP3
+file NDAttributeN_settings.req P=dp_xsp3_xrdlab:,R=C2SCAs:1:,  PORT=XSP3.C2SCAs,ADDR=0,TIMEOUT=1,NCHANS=16384
+file NDAttributeN_settings.req P=dp_xsp3_xrdlab:,R=C2SCAs:2:,  PORT=XSP3.C2SCAs,ADDR=1,TIMEOUT=1,NCHANS=16384
+file NDAttributeN_settings.req P=dp_xsp3_xrdlab:,R=C2SCAs:3:,  PORT=XSP3.C2SCAs,ADDR=2,TIMEOUT=1,NCHANS=16384
+file NDAttributeN_settings.req P=dp_xsp3_xrdlab:,R=C2SCAs:4:,  PORT=XSP3.C2SCAs,ADDR=3,TIMEOUT=1,NCHANS=16384
+file NDAttributeN_settings.req P=dp_xsp3_xrdlab:,R=C2SCAs:5:,  PORT=XSP3.C2SCAs,ADDR=4,TIMEOUT=1,NCHANS=16384
+file NDAttributeN_settings.req P=dp_xsp3_xrdlab:,R=C2SCAs:6:,  PORT=XSP3.C2SCAs,ADDR=5,TIMEOUT=1,NCHANS=16384
+file NDAttributeN_settings.req P=dp_xsp3_xrdlab:,R=C2SCAs:7:,  PORT=XSP3.C2SCAs,ADDR=6,TIMEOUT=1,NCHANS=16384
+file NDAttributeN_settings.req P=dp_xsp3_xrdlab:,R=C2SCAs:8:,  PORT=XSP3.C2SCAs,ADDR=7,TIMEOUT=1,NCHANS=16384
+file NDROI_settings.req P=dp_xsp3_xrdlab:,R=ROI2:, PORT=XSP3.CHAN2, TIMEOUT=1, ADDR=0, NDARRAY_PORT=PROC1, NDARRAY_ADDR=0, Enabled=0
+file NDStdArrays_settings.req P=dp_xsp3_xrdlab:,R=ARR2:,PORT=XSP3.ARR2,ADDR=0,TIMEOUT=1,NDARRAY_PORT=XSP3.CHAN2,TYPE=Float64,FTVL=DOUBLE,NELEMENTS=4096
+file NDROIStat_settings.req P=dp_xsp3_xrdlab:,R=ROIStat2:  ,PORT=ROISTAT2,ADDR=0,TIMEOUT=1,NDARRAY_PORT=XSP3,NCHANS=16384
+file NDROIStatN_settings.req P=dp_xsp3_xrdlab:,R=ROIStat2:1:,PORT=ROISTAT2,ADDR=0,TIMEOUT=1,NCHANS=16384
+file NDROIStatN_settings.req P=dp_xsp3_xrdlab:,R=ROIStat2:2:,PORT=ROISTAT2,ADDR=1,TIMEOUT=1,NCHANS=16384
+file NDROIStatN_settings.req P=dp_xsp3_xrdlab:,R=ROIStat2:3:,PORT=ROISTAT2,ADDR=2,TIMEOUT=1,NCHANS=16384
+file NDROIStatN_settings.req P=dp_xsp3_xrdlab:,R=ROIStat2:4:,PORT=ROISTAT2,ADDR=3,TIMEOUT=1,NCHANS=16384
+file NDROIStatN_settings.req P=dp_xsp3_xrdlab:,R=ROIStat2:5:,PORT=ROISTAT2,ADDR=4,TIMEOUT=1,NCHANS=16384
+file NDROIStatN_settings.req P=dp_xsp3_xrdlab:,R=ROIStat2:6:,PORT=ROISTAT2,ADDR=5,TIMEOUT=1,NCHANS=16384
+file NDROIStatN_settings.req P=dp_xsp3_xrdlab:,R=ROIStat2:7:,PORT=ROISTAT2,ADDR=6,TIMEOUT=1,NCHANS=16384
+file NDROIStatN_settings.req P=dp_xsp3_xrdlab:,R=ROIStat2:8:,PORT=ROISTAT2,ADDR=7,TIMEOUT=1,NCHANS=16384
+file NDROIStatN_settings.req P=dp_xsp3_xrdlab:,R=ROIStat2:9:,PORT=ROISTAT2,ADDR=8,TIMEOUT=1,NCHANS=16384
+file NDROIStatN_settings.req P=dp_xsp3_xrdlab:,R=ROIStat2:10:,PORT=ROISTAT2,ADDR=9,TIMEOUT=1,NCHANS=16384
+file NDROIStatN_settings.req P=dp_xsp3_xrdlab:,R=ROIStat2:11:,PORT=ROISTAT2,ADDR=10,TIMEOUT=1,NCHANS=16384
+file NDROIStatN_settings.req P=dp_xsp3_xrdlab:,R=ROIStat2:12:,PORT=ROISTAT2,ADDR=11,TIMEOUT=1,NCHANS=16384
+file NDROIStatN_settings.req P=dp_xsp3_xrdlab:,R=ROIStat2:13:,PORT=ROISTAT2,ADDR=12,TIMEOUT=1,NCHANS=16384
+file NDROIStatN_settings.req P=dp_xsp3_xrdlab:,R=ROIStat2:14:,PORT=ROISTAT2,ADDR=13,TIMEOUT=1,NCHANS=16384
+file NDROIStatN_settings.req P=dp_xsp3_xrdlab:,R=ROIStat2:15:,PORT=ROISTAT2,ADDR=14,TIMEOUT=1,NCHANS=16384
+file NDROIStatN_settings.req P=dp_xsp3_xrdlab:,R=ROIStat2:16:,PORT=ROISTAT2,ADDR=15,TIMEOUT=1,NCHANS=16384
+file NDROIStatN_settings.req P=dp_xsp3_xrdlab:,R=ROIStat2:17:,PORT=ROISTAT2,ADDR=16,TIMEOUT=1,NCHANS=16384
+file NDROIStatN_settings.req P=dp_xsp3_xrdlab:,R=ROIStat2:18:,PORT=ROISTAT2,ADDR=17,TIMEOUT=1,NCHANS=16384
+file NDROIStatN_settings.req P=dp_xsp3_xrdlab:,R=ROIStat2:19:,PORT=ROISTAT2,ADDR=18,TIMEOUT=1,NCHANS=16384
+file NDROIStatN_settings.req P=dp_xsp3_xrdlab:,R=ROIStat2:20:,PORT=ROISTAT2,ADDR=19,TIMEOUT=1,NCHANS=16384
+file NDROIStatN_settings.req P=dp_xsp3_xrdlab:,R=ROIStat2:21:,PORT=ROISTAT2,ADDR=20,TIMEOUT=1,NCHANS=16384
+file NDROIStatN_settings.req P=dp_xsp3_xrdlab:,R=ROIStat2:22:,PORT=ROISTAT2,ADDR=21,TIMEOUT=1,NCHANS=16384
+file NDROIStatN_settings.req P=dp_xsp3_xrdlab:,R=ROIStat2:23:,PORT=ROISTAT2,ADDR=22,TIMEOUT=1,NCHANS=16384
+file NDROIStatN_settings.req P=dp_xsp3_xrdlab:,R=ROIStat2:24:,PORT=ROISTAT2,ADDR=23,TIMEOUT=1,NCHANS=16384
+file NDROIStatN_settings.req P=dp_xsp3_xrdlab:,R=ROIStat2:25:,PORT=ROISTAT2,ADDR=24,TIMEOUT=1,NCHANS=16384
+file NDROIStatN_settings.req P=dp_xsp3_xrdlab:,R=ROIStat2:26:,PORT=ROISTAT2,ADDR=25,TIMEOUT=1,NCHANS=16384
+file NDROIStatN_settings.req P=dp_xsp3_xrdlab:,R=ROIStat2:27:,PORT=ROISTAT2,ADDR=26,TIMEOUT=1,NCHANS=16384
+file NDROIStatN_settings.req P=dp_xsp3_xrdlab:,R=ROIStat2:28:,PORT=ROISTAT2,ADDR=27,TIMEOUT=1,NCHANS=16384
+file NDROIStatN_settings.req P=dp_xsp3_xrdlab:,R=ROIStat2:29:,PORT=ROISTAT2,ADDR=28,TIMEOUT=1,NCHANS=16384
+file NDROIStatN_settings.req P=dp_xsp3_xrdlab:,R=ROIStat2:30:,PORT=ROISTAT2,ADDR=29,TIMEOUT=1,NCHANS=16384
+file NDROIStatN_settings.req P=dp_xsp3_xrdlab:,R=ROIStat2:31:,PORT=ROISTAT2,ADDR=30,TIMEOUT=1,NCHANS=16384
+file NDROIStatN_settings.req P=dp_xsp3_xrdlab:,R=ROIStat2:32:,PORT=ROISTAT2,ADDR=31,TIMEOUT=1,NCHANS=16384
+file xspress3ChannelSCAThreshold_settings.req P=dp_xsp3_xrdlab:,R=C2SCAs:5:,PORT=XSP3,ADDR=1,TIMEOUT=1,CHAN=2, SCA=4
+file xspress3ChannelSCALimits_settings.req P=dp_xsp3_xrdlab:,R=C2SCAs:6:,PORT=XSP3, ADDR=1, TIMEOUT=1, CHAN=2, SCA=5
+file xspress3ChannelSCALimits_settings.req P=dp_xsp3_xrdlab:,R=C2SCAs:7:,PORT=XSP3, ADDR=1, TIMEOUT=1, CHAN=2, SCA=6
+file NDAttribute_settings.req P=dp_xsp3_xrdlab:,R=C3SCAs:,    PORT=XSP3.C3SCAs,ADDR=0,TIMEOUT=1,NCHANS=16384,NDARRAY_PORT=XSP3
+file NDAttributeN_settings.req P=dp_xsp3_xrdlab:,R=C3SCAs:1:,  PORT=XSP3.C3SCAs,ADDR=0,TIMEOUT=1,NCHANS=16384
+file NDAttributeN_settings.req P=dp_xsp3_xrdlab:,R=C3SCAs:2:,  PORT=XSP3.C3SCAs,ADDR=1,TIMEOUT=1,NCHANS=16384
+file NDAttributeN_settings.req P=dp_xsp3_xrdlab:,R=C3SCAs:3:,  PORT=XSP3.C3SCAs,ADDR=2,TIMEOUT=1,NCHANS=16384
+file NDAttributeN_settings.req P=dp_xsp3_xrdlab:,R=C3SCAs:4:,  PORT=XSP3.C3SCAs,ADDR=3,TIMEOUT=1,NCHANS=16384
+file NDAttributeN_settings.req P=dp_xsp3_xrdlab:,R=C3SCAs:5:,  PORT=XSP3.C3SCAs,ADDR=4,TIMEOUT=1,NCHANS=16384
+file NDAttributeN_settings.req P=dp_xsp3_xrdlab:,R=C3SCAs:6:,  PORT=XSP3.C3SCAs,ADDR=5,TIMEOUT=1,NCHANS=16384
+file NDAttributeN_settings.req P=dp_xsp3_xrdlab:,R=C3SCAs:7:,  PORT=XSP3.C3SCAs,ADDR=6,TIMEOUT=1,NCHANS=16384
+file NDAttributeN_settings.req P=dp_xsp3_xrdlab:,R=C3SCAs:8:,  PORT=XSP3.C3SCAs,ADDR=7,TIMEOUT=1,NCHANS=16384
+file NDROI_settings.req P=dp_xsp3_xrdlab:,R=ROI3:, PORT=XSP3.CHAN3, TIMEOUT=1, ADDR=0, NDARRAY_PORT=PROC1, NDARRAY_ADDR=0, Enabled=0
+file NDStdArrays_settings.req P=dp_xsp3_xrdlab:,R=ARR3:,PORT=XSP3.ARR3,ADDR=0,TIMEOUT=1,NDARRAY_PORT=XSP3.CHAN3,TYPE=Float64,FTVL=DOUBLE,NELEMENTS=4096
+file NDROIStat_settings.req P=dp_xsp3_xrdlab:,R=ROIStat3:  ,PORT=ROISTAT3,ADDR=0,TIMEOUT=1,NDARRAY_PORT=XSP3,NCHANS=16384
+file NDROIStatN_settings.req P=dp_xsp3_xrdlab:,R=ROIStat3:1:,PORT=ROISTAT3,ADDR=0,TIMEOUT=1,NCHANS=16384
+file NDROIStatN_settings.req P=dp_xsp3_xrdlab:,R=ROIStat3:2:,PORT=ROISTAT3,ADDR=1,TIMEOUT=1,NCHANS=16384
+file NDROIStatN_settings.req P=dp_xsp3_xrdlab:,R=ROIStat3:3:,PORT=ROISTAT3,ADDR=2,TIMEOUT=1,NCHANS=16384
+file NDROIStatN_settings.req P=dp_xsp3_xrdlab:,R=ROIStat3:4:,PORT=ROISTAT3,ADDR=3,TIMEOUT=1,NCHANS=16384
+file NDROIStatN_settings.req P=dp_xsp3_xrdlab:,R=ROIStat3:5:,PORT=ROISTAT3,ADDR=4,TIMEOUT=1,NCHANS=16384
+file NDROIStatN_settings.req P=dp_xsp3_xrdlab:,R=ROIStat3:6:,PORT=ROISTAT3,ADDR=5,TIMEOUT=1,NCHANS=16384
+file NDROIStatN_settings.req P=dp_xsp3_xrdlab:,R=ROIStat3:7:,PORT=ROISTAT3,ADDR=6,TIMEOUT=1,NCHANS=16384
+file NDROIStatN_settings.req P=dp_xsp3_xrdlab:,R=ROIStat3:8:,PORT=ROISTAT3,ADDR=7,TIMEOUT=1,NCHANS=16384
+file NDROIStatN_settings.req P=dp_xsp3_xrdlab:,R=ROIStat3:9:,PORT=ROISTAT3,ADDR=8,TIMEOUT=1,NCHANS=16384
+file NDROIStatN_settings.req P=dp_xsp3_xrdlab:,R=ROIStat3:10:,PORT=ROISTAT3,ADDR=9,TIMEOUT=1,NCHANS=16384
+file NDROIStatN_settings.req P=dp_xsp3_xrdlab:,R=ROIStat3:11:,PORT=ROISTAT3,ADDR=10,TIMEOUT=1,NCHANS=16384
+file NDROIStatN_settings.req P=dp_xsp3_xrdlab:,R=ROIStat3:12:,PORT=ROISTAT3,ADDR=11,TIMEOUT=1,NCHANS=16384
+file NDROIStatN_settings.req P=dp_xsp3_xrdlab:,R=ROIStat3:13:,PORT=ROISTAT3,ADDR=12,TIMEOUT=1,NCHANS=16384
+file NDROIStatN_settings.req P=dp_xsp3_xrdlab:,R=ROIStat3:14:,PORT=ROISTAT3,ADDR=13,TIMEOUT=1,NCHANS=16384
+file NDROIStatN_settings.req P=dp_xsp3_xrdlab:,R=ROIStat3:15:,PORT=ROISTAT3,ADDR=14,TIMEOUT=1,NCHANS=16384
+file NDROIStatN_settings.req P=dp_xsp3_xrdlab:,R=ROIStat3:16:,PORT=ROISTAT3,ADDR=15,TIMEOUT=1,NCHANS=16384
+file NDROIStatN_settings.req P=dp_xsp3_xrdlab:,R=ROIStat3:17:,PORT=ROISTAT3,ADDR=16,TIMEOUT=1,NCHANS=16384
+file NDROIStatN_settings.req P=dp_xsp3_xrdlab:,R=ROIStat3:18:,PORT=ROISTAT3,ADDR=17,TIMEOUT=1,NCHANS=16384
+file NDROIStatN_settings.req P=dp_xsp3_xrdlab:,R=ROIStat3:19:,PORT=ROISTAT3,ADDR=18,TIMEOUT=1,NCHANS=16384
+file NDROIStatN_settings.req P=dp_xsp3_xrdlab:,R=ROIStat3:20:,PORT=ROISTAT3,ADDR=19,TIMEOUT=1,NCHANS=16384
+file NDROIStatN_settings.req P=dp_xsp3_xrdlab:,R=ROIStat3:21:,PORT=ROISTAT3,ADDR=20,TIMEOUT=1,NCHANS=16384
+file NDROIStatN_settings.req P=dp_xsp3_xrdlab:,R=ROIStat3:22:,PORT=ROISTAT3,ADDR=21,TIMEOUT=1,NCHANS=16384
+file NDROIStatN_settings.req P=dp_xsp3_xrdlab:,R=ROIStat3:23:,PORT=ROISTAT3,ADDR=22,TIMEOUT=1,NCHANS=16384
+file NDROIStatN_settings.req P=dp_xsp3_xrdlab:,R=ROIStat3:24:,PORT=ROISTAT3,ADDR=23,TIMEOUT=1,NCHANS=16384
+file NDROIStatN_settings.req P=dp_xsp3_xrdlab:,R=ROIStat3:25:,PORT=ROISTAT3,ADDR=24,TIMEOUT=1,NCHANS=16384
+file NDROIStatN_settings.req P=dp_xsp3_xrdlab:,R=ROIStat3:26:,PORT=ROISTAT3,ADDR=25,TIMEOUT=1,NCHANS=16384
+file NDROIStatN_settings.req P=dp_xsp3_xrdlab:,R=ROIStat3:27:,PORT=ROISTAT3,ADDR=26,TIMEOUT=1,NCHANS=16384
+file NDROIStatN_settings.req P=dp_xsp3_xrdlab:,R=ROIStat3:28:,PORT=ROISTAT3,ADDR=27,TIMEOUT=1,NCHANS=16384
+file NDROIStatN_settings.req P=dp_xsp3_xrdlab:,R=ROIStat3:29:,PORT=ROISTAT3,ADDR=28,TIMEOUT=1,NCHANS=16384
+file NDROIStatN_settings.req P=dp_xsp3_xrdlab:,R=ROIStat3:30:,PORT=ROISTAT3,ADDR=29,TIMEOUT=1,NCHANS=16384
+file NDROIStatN_settings.req P=dp_xsp3_xrdlab:,R=ROIStat3:31:,PORT=ROISTAT3,ADDR=30,TIMEOUT=1,NCHANS=16384
+file NDROIStatN_settings.req P=dp_xsp3_xrdlab:,R=ROIStat3:32:,PORT=ROISTAT3,ADDR=31,TIMEOUT=1,NCHANS=16384
+file xspress3ChannelSCAThreshold_settings.req P=dp_xsp3_xrdlab:,R=C3SCAs:5:,PORT=XSP3,ADDR=2,TIMEOUT=1,CHAN=3, SCA=4
+file xspress3ChannelSCALimits_settings.req P=dp_xsp3_xrdlab:,R=C3SCAs:6:,PORT=XSP3, ADDR=2, TIMEOUT=1, CHAN=3, SCA=5
+file xspress3ChannelSCALimits_settings.req P=dp_xsp3_xrdlab:,R=C3SCAs:7:,PORT=XSP3, ADDR=2, TIMEOUT=1, CHAN=3, SCA=6
+file NDAttribute_settings.req P=dp_xsp3_xrdlab:,R=C4SCAs:,    PORT=XSP3.C4SCAs,ADDR=0,TIMEOUT=1,NCHANS=16384,NDARRAY_PORT=XSP3
+file NDAttributeN_settings.req P=dp_xsp3_xrdlab:,R=C4SCAs:1:,  PORT=XSP3.C4SCAs,ADDR=0,TIMEOUT=1,NCHANS=16384
+file NDAttributeN_settings.req P=dp_xsp3_xrdlab:,R=C4SCAs:2:,  PORT=XSP3.C4SCAs,ADDR=1,TIMEOUT=1,NCHANS=16384
+file NDAttributeN_settings.req P=dp_xsp3_xrdlab:,R=C4SCAs:3:,  PORT=XSP3.C4SCAs,ADDR=2,TIMEOUT=1,NCHANS=16384
+file NDAttributeN_settings.req P=dp_xsp3_xrdlab:,R=C4SCAs:4:,  PORT=XSP3.C4SCAs,ADDR=3,TIMEOUT=1,NCHANS=16384
+file NDAttributeN_settings.req P=dp_xsp3_xrdlab:,R=C4SCAs:5:,  PORT=XSP3.C4SCAs,ADDR=4,TIMEOUT=1,NCHANS=16384
+file NDAttributeN_settings.req P=dp_xsp3_xrdlab:,R=C4SCAs:6:,  PORT=XSP3.C4SCAs,ADDR=5,TIMEOUT=1,NCHANS=16384
+file NDAttributeN_settings.req P=dp_xsp3_xrdlab:,R=C4SCAs:7:,  PORT=XSP3.C4SCAs,ADDR=6,TIMEOUT=1,NCHANS=16384
+file NDAttributeN_settings.req P=dp_xsp3_xrdlab:,R=C4SCAs:8:,  PORT=XSP3.C4SCAs,ADDR=7,TIMEOUT=1,NCHANS=16384
+file NDROI_settings.req P=dp_xsp3_xrdlab:,R=ROI4:, PORT=XSP3.CHAN4, TIMEOUT=1, ADDR=0, NDARRAY_PORT=PROC1, NDARRAY_ADDR=0, Enabled=0
+file NDStdArrays_settings.req P=dp_xsp3_xrdlab:,R=ARR4:,PORT=XSP3.ARR4,ADDR=0,TIMEOUT=1,NDARRAY_PORT=XSP3.CHAN4,TYPE=Float64,FTVL=DOUBLE,NELEMENTS=4096
+file NDROIStat_settings.req P=dp_xsp3_xrdlab:,R=ROIStat4:  ,PORT=ROISTAT4,ADDR=0,TIMEOUT=1,NDARRAY_PORT=XSP3,NCHANS=16384
+file NDROIStatN_settings.req P=dp_xsp3_xrdlab:,R=ROIStat4:1:,PORT=ROISTAT4,ADDR=0,TIMEOUT=1,NCHANS=16384
+file NDROIStatN_settings.req P=dp_xsp3_xrdlab:,R=ROIStat4:2:,PORT=ROISTAT4,ADDR=1,TIMEOUT=1,NCHANS=16384
+file NDROIStatN_settings.req P=dp_xsp3_xrdlab:,R=ROIStat4:3:,PORT=ROISTAT4,ADDR=2,TIMEOUT=1,NCHANS=16384
+file NDROIStatN_settings.req P=dp_xsp3_xrdlab:,R=ROIStat4:4:,PORT=ROISTAT4,ADDR=3,TIMEOUT=1,NCHANS=16384
+file NDROIStatN_settings.req P=dp_xsp3_xrdlab:,R=ROIStat4:5:,PORT=ROISTAT4,ADDR=4,TIMEOUT=1,NCHANS=16384
+file NDROIStatN_settings.req P=dp_xsp3_xrdlab:,R=ROIStat4:6:,PORT=ROISTAT4,ADDR=5,TIMEOUT=1,NCHANS=16384
+file NDROIStatN_settings.req P=dp_xsp3_xrdlab:,R=ROIStat4:7:,PORT=ROISTAT4,ADDR=6,TIMEOUT=1,NCHANS=16384
+file NDROIStatN_settings.req P=dp_xsp3_xrdlab:,R=ROIStat4:8:,PORT=ROISTAT4,ADDR=7,TIMEOUT=1,NCHANS=16384
+file NDROIStatN_settings.req P=dp_xsp3_xrdlab:,R=ROIStat4:9:,PORT=ROISTAT4,ADDR=8,TIMEOUT=1,NCHANS=16384
+file NDROIStatN_settings.req P=dp_xsp3_xrdlab:,R=ROIStat4:10:,PORT=ROISTAT4,ADDR=9,TIMEOUT=1,NCHANS=16384
+file NDROIStatN_settings.req P=dp_xsp3_xrdlab:,R=ROIStat4:11:,PORT=ROISTAT4,ADDR=10,TIMEOUT=1,NCHANS=16384
+file NDROIStatN_settings.req P=dp_xsp3_xrdlab:,R=ROIStat4:12:,PORT=ROISTAT4,ADDR=11,TIMEOUT=1,NCHANS=16384
+file NDROIStatN_settings.req P=dp_xsp3_xrdlab:,R=ROIStat4:13:,PORT=ROISTAT4,ADDR=12,TIMEOUT=1,NCHANS=16384
+file NDROIStatN_settings.req P=dp_xsp3_xrdlab:,R=ROIStat4:14:,PORT=ROISTAT4,ADDR=13,TIMEOUT=1,NCHANS=16384
+file NDROIStatN_settings.req P=dp_xsp3_xrdlab:,R=ROIStat4:15:,PORT=ROISTAT4,ADDR=14,TIMEOUT=1,NCHANS=16384
+file NDROIStatN_settings.req P=dp_xsp3_xrdlab:,R=ROIStat4:16:,PORT=ROISTAT4,ADDR=15,TIMEOUT=1,NCHANS=16384
+file NDROIStatN_settings.req P=dp_xsp3_xrdlab:,R=ROIStat4:17:,PORT=ROISTAT4,ADDR=16,TIMEOUT=1,NCHANS=16384
+file NDROIStatN_settings.req P=dp_xsp3_xrdlab:,R=ROIStat4:18:,PORT=ROISTAT4,ADDR=17,TIMEOUT=1,NCHANS=16384
+file NDROIStatN_settings.req P=dp_xsp3_xrdlab:,R=ROIStat4:19:,PORT=ROISTAT4,ADDR=18,TIMEOUT=1,NCHANS=16384
+file NDROIStatN_settings.req P=dp_xsp3_xrdlab:,R=ROIStat4:20:,PORT=ROISTAT4,ADDR=19,TIMEOUT=1,NCHANS=16384
+file NDROIStatN_settings.req P=dp_xsp3_xrdlab:,R=ROIStat4:21:,PORT=ROISTAT4,ADDR=20,TIMEOUT=1,NCHANS=16384
+file NDROIStatN_settings.req P=dp_xsp3_xrdlab:,R=ROIStat4:22:,PORT=ROISTAT4,ADDR=21,TIMEOUT=1,NCHANS=16384
+file NDROIStatN_settings.req P=dp_xsp3_xrdlab:,R=ROIStat4:23:,PORT=ROISTAT4,ADDR=22,TIMEOUT=1,NCHANS=16384
+file NDROIStatN_settings.req P=dp_xsp3_xrdlab:,R=ROIStat4:24:,PORT=ROISTAT4,ADDR=23,TIMEOUT=1,NCHANS=16384
+file NDROIStatN_settings.req P=dp_xsp3_xrdlab:,R=ROIStat4:25:,PORT=ROISTAT4,ADDR=24,TIMEOUT=1,NCHANS=16384
+file NDROIStatN_settings.req P=dp_xsp3_xrdlab:,R=ROIStat4:26:,PORT=ROISTAT4,ADDR=25,TIMEOUT=1,NCHANS=16384
+file NDROIStatN_settings.req P=dp_xsp3_xrdlab:,R=ROIStat4:27:,PORT=ROISTAT4,ADDR=26,TIMEOUT=1,NCHANS=16384
+file NDROIStatN_settings.req P=dp_xsp3_xrdlab:,R=ROIStat4:28:,PORT=ROISTAT4,ADDR=27,TIMEOUT=1,NCHANS=16384
+file NDROIStatN_settings.req P=dp_xsp3_xrdlab:,R=ROIStat4:29:,PORT=ROISTAT4,ADDR=28,TIMEOUT=1,NCHANS=16384
+file NDROIStatN_settings.req P=dp_xsp3_xrdlab:,R=ROIStat4:30:,PORT=ROISTAT4,ADDR=29,TIMEOUT=1,NCHANS=16384
+file NDROIStatN_settings.req P=dp_xsp3_xrdlab:,R=ROIStat4:31:,PORT=ROISTAT4,ADDR=30,TIMEOUT=1,NCHANS=16384
+file NDROIStatN_settings.req P=dp_xsp3_xrdlab:,R=ROIStat4:32:,PORT=ROISTAT4,ADDR=31,TIMEOUT=1,NCHANS=16384
+file xspress3ChannelSCAThreshold_settings.req P=dp_xsp3_xrdlab:,R=C4SCAs:5:,PORT=XSP3,ADDR=3,TIMEOUT=1,CHAN=4, SCA=4
+file xspress3ChannelSCALimits_settings.req P=dp_xsp3_xrdlab:,R=C4SCAs:6:,PORT=XSP3, ADDR=3, TIMEOUT=1, CHAN=4, SCA=5
+file xspress3ChannelSCALimits_settings.req P=dp_xsp3_xrdlab:,R=C4SCAs:7:,PORT=XSP3, ADDR=3, TIMEOUT=1, CHAN=4, SCA=6

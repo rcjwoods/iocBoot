@@ -1,0 +1,7 @@
+*~
+*.loglogin
+*.cvsignore
+autosave
+*.log
+firmware
+

@@ -1,0 +1,16 @@
+#!/bin/bash
+
+#Setup Ethernet card
+/local/DPbin/dp-eth-config/dp-eth.config mythen
+
+sleep 1
+
+export EPICS_CA_MAX_ARRAY_BYTES=300000000
+
+cd /local/DPbin/epics/iocBoot/iocMythen/
+
+source /local/DPbin/Scripts/Paths.bash
+
+${ADMYTHEN}/iocs/mythenIOC/bin/${EPICS_HOST_ARCH}/mythenApp st.cmd
+
+
