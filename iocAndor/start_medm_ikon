@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "Starting Shamrock MEDM..."
+echo "Starting iKon MEDM..."
 
 export EPICS_CA_MAX_ARRAY_BYTES=30000000
 source /local/DPbin/Scripts/Paths.bash

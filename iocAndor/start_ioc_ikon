@@ -1,0 +1,14 @@
+#!/bin/bash
+echo "Starting iKon IOC..."
+
+export EPICS_CA_MAX_ARRAY_BYTES=30000000
+
+cd /local/DPbin/epics/iocBoot/iocAndor/
+
+source /local/DPbin/Scripts/Paths.bash
+
+echo ${ADANDOR}
+
+${ADANDOR}/iocs/andorIOC/bin/${EPICS_HOST_ARCH}/andorCCDApp st.cmd_ikon
+
+
